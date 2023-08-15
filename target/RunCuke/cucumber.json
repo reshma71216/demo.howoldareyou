@@ -1,0 +1,110 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4846575600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUP()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Valid name and invalid birthday entered",
+        "description": "",
+        "id": "age-calculation;valid-name-and-invalid-birthday-entered",
+        "after": [
+          {
+            "result": {
+              "duration": 824335000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 188797600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on homepage of given url",
+            "match": {
+              "location": "HomePageStep.userIsOnHomepageOfGivenUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 161997900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enter name in username textbox",
+            "match": {
+              "location": "HomePageStep.userEnterNameInUsernameTextbox()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 71815300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter invalid birthdate in birthday textbox",
+            "match": {
+              "location": "HomePageStep.userEnterInvalidBirthdateInBirthdayTextbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69632700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click on submit button",
+            "match": {
+              "location": "HomePageStep.userClickOnSubmitButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 374351400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user verify \"you are too old to use it\" error message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "you are too old to use it",
+                  "offset": 13
+                }
+              ],
+              "location": "HomePageStep.userVerifyErrorMessage(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Age Calculation",
+    "description": "",
+    "id": "age-calculation",
+    "keyword": "Feature",
+    "uri": "homepage.feature"
+  }
+]
